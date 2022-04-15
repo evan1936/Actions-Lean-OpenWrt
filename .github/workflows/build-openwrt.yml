@@ -6,7 +6,7 @@
 # Blog: https://P3TERX.com
 #=================================================
 
-name: OpenWrt
+name: Build OpenWrt
 
 on:
   repository_dispatch:
@@ -15,7 +15,7 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: false
-        default: 'ture'
+        default: 'false'
 #  release:
 #    types: published
 #  push:
@@ -35,7 +35,7 @@ env:
   CONFIG_FILE: x86.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: ture
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
